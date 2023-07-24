@@ -1,9 +1,9 @@
 let homeScore = document.getElementById("home-score")
-let guestScore = document.getElementById("guest-score")
+let awayScore = document.getElementById("away-score")
 let homeHolder = document.getElementById("home-holder")
-let guestHolder = document.getElementById("guest-holder")
+let awayHolder = document.getElementById("away-holder")
 let homeTotal = 0;
-let guestTotal = 0;
+let awayTotal = 0;
 
 function home1Point() {
     homeTotal += 1
@@ -20,39 +20,39 @@ function home3Point() {
     homeScore.textContent = homeTotal
 }
 
-function guest1Point() {
-    guestTotal += 1
-    guestScore.textContent = guestTotal
+function away1Point() {
+    awayTotal += 1
+    awayScore.textContent = awayTotal
 }
 
-function guest2Point() {
-    guestTotal += 2
-    guestScore.textContent = guestTotal
+function away2Point() {
+    awayTotal += 2
+    awayScore.textContent = awayTotal
 }
 
-function guest3Point() {
-    guestTotal += 3
-    guestScore.textContent = guestTotal
+function away3Point() {
+    awayTotal += 3
+    awayScore.textContent = awayTotal
 }
 
 function newGame() {
     homeScore.textContent = 0;
-    guestScore.textContent = 0;
+    awayScore.textContent = 0;
     homeHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
-    guestHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
+    awayHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
 }
 
 function leader() {
-   if(guestTotal > homeTotal) {
+   if(awayTotal > homeTotal) {
         homeHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
-        guestHolder.style.background = "rgba(252, 211, 77, 1)"
+        awayHolder.style.background = "rgba(252, 211, 77, 1)"
     }
-    else if (homeTotal > guestTotal) {
+    else if (homeTotal > awayTotal) {
             homeHolder.style.backgroundColor = "rgba(252, 211, 77, 1)"
-            guestHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
+            awayHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
         }
     else {
         homeHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
-        guestHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
+        awayHolder.style.backgroundColor = "rgba(8, 0, 1, 1)"
     }
 }
