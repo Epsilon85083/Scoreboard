@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-.home-half, .guest-half {
+.home-half, .away-half {
     align-self: center;
     width: 20vw;
     display: flex;
@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-.home-score, .guest-score {
+.home-score, .away-score {
 font-family: 'Cursed Timer ULiL', sans-serif;
 font-style: normal;
 font-size: 90px;
