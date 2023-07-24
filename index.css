@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background: #1B244A;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.home-half, .guest-half {
+    align-self: center;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-score, .guest-score {
+font-family: 'Cursed Timer ULiL', sans-serif;
+font-style: normal;
+font-size: 90px;
+text-align: center;
+color: #F94F6D;
+position: relative;
+bottom: 4.2rem;
+}
+
+.score-holder {
+    background-color: rgba(8, 0, 1, 1);
+    border-radius: 7px;
+    height: 8rem;
+    width: 11rem;
+    text-align: center;
+}
+
+h3 {
+    color: rgba(238, 238, 238, 1);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button {
+    background: #1B244A;
+    color: rgba(154, 171, 216, 1);
+    border: solid;
+    border-color: rgba(154, 171, 216, 1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 18px;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    width: 11rem;
+}
+
+button.new-game {
+    font-size: 40px;
+    width: 7rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+}
